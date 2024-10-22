@@ -45,17 +45,22 @@ class Program
     {
         // default constructor ile nesne olusturma (bilgiler daha sonra atanir)
         Kitap kitap1 = new Kitap();
-        kitap1.Ad = "Doğunun Limanları";
-        kitap1.YazarAd = "Amin";
-        kitap1.YazarSoyad = "Maalouf";
-        kitap1.SayfaSayisi = 183;
-        kitap1.YayinEvi = "Yapıkredi Yayınları";
+        kitap1.Ad = "Normal People";
+        kitap1.YazarAd = "Sally";
+        kitap1.YazarSoyad = "Rooney";
+        kitap1.SayfaSayisi = 304;
+        kitap1.YayinEvi = "Crown Publishing Group";
 
         kitap1.BilgileriYazdir();
         Console.WriteLine();
 
         // parametreli constructor ile nesne olusturma
-        Kitap kitap2 = new Kitap("Doğunun Limanları", "Amin", "Maalouf", 183, "Yapıkredi Yayınları");
+        Kitap kitap2 = new Kitap("Ports of Call", "Amin", "Maalouf", 183, "Vintage Publishing");
         kitap2.BilgileriYazdir();
+    }
+}
+
+ Kitap kitap3 = new Kitap("The Bell Jar", "Sylvia", "Plath", 288, "HarperCollins");
+        kitap3.BilgileriYazdir();
     }
 }
